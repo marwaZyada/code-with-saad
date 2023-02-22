@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cairo;
+}
+
+:root{
+    --navy:#475c72;
+    --white:#ffffff;
+    --lightGreen:#1abc9c;
+    --red:#ff0000;
+    --lightGray:#c5bfbf;
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* start header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 0px 100px;
+    color: var(--white);
+    background-color: var(--navy);
+    border-top: solid var(--red) 4px;
+}
+header a{
+    margin-right: 10px;
+    
+    font-size: 22px;
+    transition: ease .5s;
+}
+header a:hover{
+    color: var(--lightGreen);
+    font-size: 24px;
+}
+/* end header */
+
+
+/* cursor section */
+.cursor{
+    background-image: url(images/flowers.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
+}
+.cursor span{
+    color: var(--red);
+}
+.cursor a{
+    padding: 10px;
+    background-color: var(--lightGreen);
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: .5s;
+   
+}
+.cursor a:hover{
+    background-color: var(--navy);
+    transform: scale(1.1);
+}
+/* end cursor section */
+
+
+/* start services section */
+.services h2{
+    text-align: center;
+}
+.services .container{
+    display: flex;
+    justify-content:center;
+    gap: 15px;
+    padding: 0px 100px;
+    flex-wrap: wrap;
+}
+.services .card{
+    width: 25em;
+    text-align: center;
+    box-shadow: 3px 3px 6px 6px var(--lightGray);
+    padding: 5px;
+}
+.services i{
+    font-size: 2rem;
+    color: var(--navy);
+}
+.services h3{
+    color: var(--red);
+    font-weight: 1000;
+}
+/* end services section */
+
+/* start portofolio section */
+.portofolio{
+    background-color: var(--navy);
+   margin:  20px 0px;
+   text-align: center;
+}
+.portofolio h2{
+    display: inline-block;
+       
+    color: var(--white);
+    border-bottom: 3px solid var(--red);
+
+}
+.portofolio .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 100px;
+    gap: 15px;
+}
+.portofolio .card{
+    width: 25em;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: var(--white);
+}
+.portofolio img{
+    width: 100%;
+    /* object-fit: cover; */
+}
+.portofolio .card-desc{
+    padding: 0px 5px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items:end ;
+    text-align: justify;
+    line-height: 1.3;
+    font-weight: 900;
+}
+.portofolio p{
+    
+    width: 60%;
+}
+.portofolio a{
+    background-color: var(--lightGreen);
+    display: inline-block;
+    padding:0px 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+
+/* end portofolio section */
+
+/* start notilla section  */
+
+.notilla .container{
+    padding: 30px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+}
+.notilla .content{
+    width: 60%;
+}
+/* .notilla .image{
+    width: 40%;
+} */
+/* end notilla section  */
